@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahavir Sharma | Professional Commerce & English Tuition Kota</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #27ae60;
+            --light: #f8f9fa;
+            --text: #333;
+        }
+
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; margin: 0; color: var(--text); background: var(--light); }
+
+        /* Navigation */
+        nav { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-weight: 700; font-size: 1.4rem; color: var(--primary); }
+        .nav-links a { text-decoration: none; color: var(--text); margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #34495e 100%); color: white; padding: 80px 5%; text-align: center; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px; }
+        .btn-main { background: var(--secondary); color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s; }
+        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4); }
+
+        /* Stats Section */
+        .stats { display: flex; justify-content: center; gap: 40px; margin-top: -40px; padding: 0 5%; }
+        .stat-card { background: white; padding: 20px 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; }
+        .stat-card h3 { color: var(--secondary); margin: 0; font-size: 1.8rem; }
+
+        .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+
+        /* Service Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+        .card { background: white; padding: 30px; border-radius: 12px; border-bottom: 4px solid var(--primary); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+
+        /* Form Section */
+        .contact-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; background: white; padding: 40px; border-radius: 15px; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
+        .btn-submit { background: var(--primary); color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 1rem; }
+
+        /* FAQ Toggle */
+        .faq-item { background: white; margin-bottom: 10px; border-radius: 5px; overflow: hidden; border: 1px solid #eee; }
+        .faq-question { padding: 15px; cursor: pointer; display: flex; justify-content: space-between; font-weight: 600; background: #fff; }
+        .faq-answer { padding: 0 15px; max-height: 0; overflow: hidden; transition: 0.3s ease-out; background: #fafafa; }
+
+        @media (max-width: 768px) {
+            .contact-flex { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+            .stats { flex-direction: column; gap: 15px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Mahavir Sharma</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="badge" style="background:var(--accent); display:inline-block; padding:5px 15px; border-radius:20px; font-size:0.8rem; margin-bottom:15px;">33+ Years of Excellence</div>
+    <h1>Expert Commerce & English Coaching</h1>
+    <p>Empowering students in Kota with personalized attention and proven results.</p>
+    <a href="#contact" class="btn-main">Book Free Demo Class</a>
+</section>
+
+<section class="stats">
+    <div class="stat-card"><h3>33+</h3><p>Years Exp.</p></div>
+    <div class="stat-card"><h3>1000+</h3><p>Students Taught</p></div>
+    <div class="stat-card"><h3>Verified</h3><p>Professional</p></div>
+</section>
+
+<div class="container" id="classes">
+    <h2 style="text-align:center">Specialized Coaching Programs</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Class 11 & 12</h3>
+            <p>Comprehensive coverage of Accountancy, Economics, and Business Studies for ISC, ICSE, and State Boards.</p>
+        </div>
+        <div class="card">
+            <h3>College & Prof.</h3>
+            <p>Specialized batches for B.Com, MBA, CMA, and CA Foundation courses with exam-oriented focus.</p>
+        </div>
+        <div class="card">
+            <h3>Spoken English</h3>
+            <p>Master communication skills with personalized English training for students and professionals.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="about">
+    <div class="contact-flex">
+        <div>
+            <h2>Why Choose Mahavir Sharma?</h2>
+            <p>Located in the Electricity Board Area of Kota, I specialize in teaching in small batches to ensure every student gets the focus they deserve.</p>
+            <p><strong>Education:</strong> MBA (NIPM, 1996)</p>
+            <p><strong>Languages:</strong> Native Hindi & Proficient English</p>
+            <p><strong>Methodology:</strong> I focus on building strong foundations for weak students and providing advanced strategies for high achievers.</p>
+        </div>
+        <div id="contact" style="background: #f8f9fa; padding: 25px; border-radius: 10px;">
+            <h3>Enquire Now</h3>
+            <form id="studentForm">
+                <input type="text" placeholder="Student Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;">
+                    <option>Select Course</option>
+                    <option>Class 12 Tuition</option>
+                    <option>Class 11 Tuition</option>
+                    <option>B.Com / MBA</option>
+                    <option>Spoken English</option>
+                </select>
+                <textarea placeholder="Any specific requirements?" rows="4"></textarea>
+                <button type="submit" class="btn-submit">Request Call Back</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="faq">
+    <h2 style="text-align:center">Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <div class="faq-question">Do you provide demo classes? <span>+</span></div>
+        <div class="faq-answer"><p>Yes, I provide a free demo class for all students to understand my teaching style before enrolling.</p></div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Which boards do you cover? <span>+</span></div>
+        <div class="faq-answer"><p>I teach students from ISC, ICSE, CBSE, NIOS, and various State Boards.</p></div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Are there special batches for CA Foundation? <span>+</span></div>
+        <div class="faq-answer"><p>Yes, I provide focused coaching for professional courses like CA Foundation and CMA.</p></div>
+    </div>
+</div>
+
+<footer style="background:var(--primary); color:white; padding:40px 5%; text-align:center; margin-top:50px;">
+    <p><strong>Mahavir Sharma Coaching</strong></p>
+    <p>Electricity Board Area, Kota, Rajasthan - 324008</p>
+    <p style="opacity: 0.7; font-size: 0.8rem;">&copy; 2026 Professional Educator Profile. All rights reserved.</p>
+</footer>
+
+<script>
+    // FAQ Toggle Script
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                item.querySelector('span').innerText = '+';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                item.querySelector('span').innerText = '-';
+            }
+        });
+    });
+
+    // Form Submission Handling
+    document.getElementById('studentForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you! Your request has been sent. Mahavir Sharma will contact you shortly.');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
